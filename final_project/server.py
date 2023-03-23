@@ -29,6 +29,9 @@ def french_to_english_post():
     # Write your code here
     return french_to_english(text_to_translate)
 
+@app.route("/")
+def renderIndexPage():
+    return 'Hello', 200
 
 
 if __name__ == "__main__":
